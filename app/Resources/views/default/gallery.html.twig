@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Sri lanka baksteen gallery</h1>
+    <p>{{ images|length }} images</p>
+    {% for image in images %}
+        <div><img src="images/{{ image.getFilename() }}"></div>
+    {% endfor %}
+{% endblock %}

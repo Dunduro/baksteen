@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Baksteen sri lanka foto's!{% endblock %}</title>
         {% block stylesheets %}
-            {% stylesheets 'bundles/app/css/*' output='css/compiled/main.css'%}
+            {% stylesheets '@AppBundle/Resources/public/css/*' output='css/compiled/main.css'%}
             <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
         {% endblock %}
@@ -15,7 +15,12 @@
         {% block body %}{% endblock %}
         </div>
         {% block javascripts %}
-            {% javascripts '@AppBundle/Resources/public/js/*' output='js/compiled/main.js' %}
+            {% javascripts
+            '@AppBundle/Resources/public/js/jquery-3.1.0.js'
+            '@AppBundle/Resources/public/js/bootstrap.js'
+            '@AppBundle/Resources/public/js/dropzone.js'
+            '@AppBundle/Resources/public/js/main.js'
+            output='js/compiled/main.js' %}
             <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
