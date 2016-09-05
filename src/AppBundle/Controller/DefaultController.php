@@ -40,4 +40,8 @@ class DefaultController extends Controller
         ));
         return $response;
     }
+
+    public function galleryAction(Request $request){
+
+    }
 }
