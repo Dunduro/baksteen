@@ -1,0 +1,7 @@
+homepage:
+    path:      /
+    defaults:  { _controller: AppBundle:Default:index }
+
+upload_file:
+    path:      /upload
+    defaults:  { _controller: AppBundle:Default:upload }
