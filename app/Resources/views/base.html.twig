@@ -17,10 +17,11 @@
         {% block javascripts %}
             {% javascripts
             '@AppBundle/Resources/public/js/jquery-3.1.0.js'
-            '@AppBundle/Resources/public/js/bootstrap.js'
+
             '@AppBundle/Resources/public/js/dropzone.js'
             '@AppBundle/Resources/public/js/main.js'
             output='js/compiled/main.js' %}
+            {#'@AppBundle/Resources/public/js/bootstrap.js'#}
             <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
