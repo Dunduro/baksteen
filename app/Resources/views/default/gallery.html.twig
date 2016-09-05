@@ -4,6 +4,9 @@
     <h1>Sri lanka baksteen gallery</h1>
     <p>{{ images|length }} images</p>
     {% for image in images %}
-        <div><img src="images/{{ image.getFilename() }}"></div>
+        <div class="gallery_box">
+            <img class="gallery_image" src="images/{{ image.getFilename() }}">
+            <p class="gallery_name">{{ image.getFilename() }}</p>
+        </div>
     {% endfor %}
 {% endblock %}

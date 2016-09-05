@@ -1,0 +1,17 @@
+.gallery_box{
+    width: 220px;
+    height: 240px;
+    padding: 10px;
+    float: left;
+}
+.gallery_box .gallery_image{
+    max-width: 200px;
+    max-height: 200px;
+}
+.gallery_box .gallery_name{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+}
