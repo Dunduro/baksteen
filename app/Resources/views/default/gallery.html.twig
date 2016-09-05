@@ -5,8 +5,10 @@
     <p>{{ images|length }} images</p>
     {% for image in images %}
         <div class="gallery_box">
-            <img class="gallery_image" src="images/{{ image.getFilename() }}">
-            <p class="gallery_name">{{ image.getFilename() }}</p>
+            <a target="_blank" href="images/{{ image.getFilename() }}">
+                <img class="gallery_image" src="images/{{ image.getFilename() }}">
+                <p class="gallery_name">{{ image.getFilename() }}</p>
+            </a>
         </div>
     {% endfor %}
 {% endblock %}
